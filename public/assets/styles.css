@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list-header{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px grey;
+    
+}
+
+.list-element{
+    box-shadow: 1px;
+}
+
+.logo-header{
+    width: 190px;
+}
