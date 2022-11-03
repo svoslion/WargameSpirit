@@ -23,6 +23,10 @@ body{
     text-decoration: none;
 }
 
+.ankre-header:hover{
+    color: #68B65B
+}
+
 .list-element{
     box-shadow: 1px;
 }
@@ -74,10 +78,116 @@ body{
 main{
     height: 100%;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
 }
 
 
 
+.section-principale{
+    background-color: #f5f0f0;
+    padding: 17%;
+    
+}
+
+.background{
+    display: flex;
+    height: 380px;
+}
+
+.img-pub{
+    margin-left: 70px
+}
+
+.shadow-img{    
+    box-shadow: 5px 5px 5px 5px #d1d1c7;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hover-pub:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.blog-post{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+}
+
+.annonces{
+    display: flex;
+}
+
+.about{
+    width: 230px;
+    box-shadow: 5px 5px 5px 5px #d1d1c7;
+}
+
+.main-right{
+    margin-left: 20%;
+    margin-top: 45%
+}
+
+.blog-post{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #d1d1c7;
+    background-color: white;
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.color-title{
+    background-color: #68B65B;
+    border-radius: 5px;
+}
+
+.blog-post-title{
+    color: white;
+    padding: 20px;
+}
+
+.nav-right{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 
+.category-nav-right{
+    margin-bottom: 10px;
+}
+
+.category-nav-right:hover{
+    color: black;
+}
+
+.carousel{
+    width: 100%;
+    height: 100%;
+}
+
+.d-block{
+    width: 100%;
+    height: 370px;
+}
+
+.shadow-category{   
+    text-shadow: grey 1px 0 2px;
+}
+
+.link-support{
+    text-decoration: none;
+    color: black;
+}
+
+.link-support:hover{
+    color: #68B65B;
+}
+.category-subject-link{
+    text-decoration: none;
+    color: #68B65B;
+}
+
+.category-subject-link:hover{
+    color: black;
+}
