@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: space-evenly ;
     text-shadow: 1px 1px 2px grey;
     font-family: 'Roboto Condensed', sans-serif;
     
