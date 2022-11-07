@@ -8,10 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SubjectController extends AbstractController
 {
-    #[Route('/subject', name: 'app_subject')]
-    public function index(): Response
+    #[Route('/subject', name: 'subject_show')] 
+    // slug pour trouver un article (paramètre dynamique)
+    public function show(): Response
     {
-        return $this->render('subject/index.html.twig', [
+        return $this->render('subject/show.html.twig', [
             'controller_name' => 'SubjectController',
         ]);
     }
