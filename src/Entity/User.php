@@ -24,7 +24,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private array $roles = [];
 
     /**
-     * @var string The hashed password
+     * @var string le mot de passe hasher ci dessous
      */
     #[ORM\Column]
     private ?string $password = null;
@@ -62,7 +62,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function getRoles(): array
     {
         $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
+        // chaque utililisateur a le ROLE_USER
         $roles[] = 'ROLE_USER';
 
         return array_unique($roles);

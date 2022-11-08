@@ -26,6 +26,7 @@ class AdminSubscriber implements EventSubscriberInterface
         if (!$entity instanceof TimestampedInterface) {
             return;
         }
+        //
 
         $entity->setCreatedAt(new \DateTime());
 
