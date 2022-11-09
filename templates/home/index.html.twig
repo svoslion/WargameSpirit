@@ -124,21 +124,11 @@
 							<div class="section-category p-4 mb-3 about rounded bg-light">
 								<h4 class="fst-italic shadow-category">Catégories</h4>
 								<ol class="list-unstyled mb-0 list-category">
-									<li class="category-nav-right">
-										<a class="category-subject-link" href="#">Warhammer 40 000</a>
-									</li>
-									<li class="category-nav-right">
-										<a class="category-subject-link" href="#">Age of Sigmar</a>
-									</li>
-									<li class="category-nav-right">
-										<a class="category-subject-link" href="#">Jeux de société</a>
-									</li>
-									<li class="category-nav-right">
-										<a class="category-subject-link" href="#">Jeux de cartes</a>
-									</li>
-									<li class="category-nav-right">
-										<a class="category-subject-link" href="#">Modélisme et peinture</a>
-									</li>
+									{% for category in categories %}
+										<li class="category-nav-right">
+											<a class="category-subject-link" href="{{ path('category_show', { slug: category.slug }) }}">{{ category.name }}</a>
+										</li>
+									{% endfor %}
 								</ol>
 							</div>
 							<div class="p-4 mb-3 bg-light rounded about">

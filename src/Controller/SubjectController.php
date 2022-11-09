@@ -14,7 +14,7 @@ class SubjectController extends AbstractController
     public function show(SubjectRepository $subjectRepo): Response
     {
         return $this->render('subject/show.html.twig', [
-            'subjects' => $subjectRepo->findAll()
+            'subjects' => $subjectRepo->findAll(),
         ]);
     }
 }
