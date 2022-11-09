@@ -179,6 +179,24 @@ main{
     margin-bottom: 150px;
 }
 
-
-
+.paragraphe-inscription {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+  
+.title-inscription {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  .card-5 {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    
+  }
 
