@@ -35,7 +35,7 @@ class Subject implements TimestampedInterface
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $updatedAt = null;
 
-    #[ORM\ManyToMany(targetEntity: Category::class, mappedBy: 'subjects')]
+    #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'subjects')]
     private Collection $categories;
 
     #[ORM\OneToMany(mappedBy: 'subject', targetEntity: Comment::class, orphanRemoval: true)]

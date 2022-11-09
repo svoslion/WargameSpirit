@@ -24,7 +24,7 @@ class Category
     #[ORM\Column(length: 10)]
     private ?string $color = null;
 
-    #[ORM\ManyToMany(targetEntity: Subject::class, inversedBy: 'categories')]
+    #[ORM\ManyToMany(targetEntity: Subject::class, mappedBy: 'categories')]
     private Collection $subjects;
 
     public function __construct()
