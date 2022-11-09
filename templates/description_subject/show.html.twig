@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ subject.title }}
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1>{{ subject.title }}</h1>
+
+        <hr>
+
+        {{ subject.content | raw }}
+	</div>
+    
+
+{% endblock %}
