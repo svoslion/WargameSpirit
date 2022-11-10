@@ -124,6 +124,7 @@
 							<div class="section-category p-4 mb-3 about rounded bg-light">
 								<h4 class="fst-italic shadow-category">Catégories</h4>
 								<ol class="list-unstyled mb-0 list-category">
+								{# Création de la boucle qui génère les catégories  #}
 									{% for category in categories %}
 										<li class="category-nav-right">
 											<a class="category-subject-link" href="{{ path('category_show', { slug: category.slug }) }}">{{ category.name }}</a>
