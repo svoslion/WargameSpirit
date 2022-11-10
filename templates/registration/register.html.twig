@@ -7,17 +7,25 @@
 
 	<div class="container w-25">
 		<div class="card card-5">
+        <div class="card-heading">
 			<h1 class="title-inscription">
-				Inscription WargameSpirit</h1>
+				 Inscription WargameSpirit</h1>
+                 </div>
 
 			{{ form_start(registrationForm) }}
 			<div class="mail-inscription">
 				<div class="paragraphe-inscription">
 					<p>Créez votre compte Wargamespirit</p>
 				</div>
+                </div>
+
+                <div class="card-body">
+                <div class ="name">
+                </div>
+            
                 
 				{{ form_row(registrationForm.email) }}
-			</div>
+			
 
 
 			<div class="password">
@@ -30,7 +38,9 @@
 
 			<button type="submit" class="btn btn-success">S'inscrire</button>
 			{{ form_end(registrationForm) }}
+            </div>
 		</div>
+        </form>
 	</div>
 
 {% endblock %}
