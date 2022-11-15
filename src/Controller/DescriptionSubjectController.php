@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+
 use App\Entity\Subject;
+use App\Form\Type\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,8 +17,12 @@ class DescriptionSubjectController extends AbstractController
         if (!$subject) {
             return $this->redirectToRoute('app_home');
         }
-        return $this->render('description_subject/show.html.twig', [
-            'subject' => $subject, 
+
+        $commentForm = $this->createForm(CommentType::class);
+ 
+        return $this->renderForm('description_subject/show.html.twig', [
+            'subject' => $subject,
+            'commentForm' => $commentForm  
         ]);
     }
 }

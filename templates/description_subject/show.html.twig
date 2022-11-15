@@ -11,7 +11,16 @@
         <hr>
 
         {{ subject.content | raw }}
-	</div>
-    
 
+		<h2 class="comment-title mt-5">
+		   <span id="comment-count">{{ subject.comments|length }} commentaires(s)</span>	
+		</h2>
+
+		<hr>
+
+		<div class="comment-area mb-5">
+		   {{ form(commentForm) }}
+		</div>
+
+	</div>
 {% endblock %}

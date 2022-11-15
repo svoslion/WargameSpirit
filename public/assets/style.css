@@ -202,17 +202,7 @@ main{
   .paragraphe-inscription {
     text-align: center;
     font-weight: bold;
-    .subject-item{
-    align-items: center;
 }
-
-.color-subject{
-    margin-bottom: 20px;
-}
-
-
-
-  }
   
   .btn--green {
     background: #68B65B;
