@@ -179,13 +179,71 @@ main{
     margin-bottom: 150px;
 }
 
-.subject-item{
+.card-5 .card-body {
+    
+    padding-bottom: 73px;
+    margin-left:100px ;
+    
+  }
+
+  .card-5 .card-heading {
+    padding: 20px 0;
+    background: #1a1a1a;
+    -top-left-radius: 10px;
+  }
+  .title-inscription {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .paragraphe-inscription {
+    text-align: center;
+    font-weight: bold;
+    .subject-item{
     align-items: center;
 }
 
 .color-subject{
     margin-bottom: 20px;
 }
+
+
+
+  }
+  
+  .btn--green {
+    background: #68B65B;
+    
+  }
+  .btn--radius-2 {
+    border-radius: 5px;
+   
+  }
+  
+  .btn--radius {
+    border-radius: 3px;
+    
+  }
+  .btn {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f0f3f0;
+    font-family:sans-serif;
+    margin: 20px;
+  }
+
+
+  
+
+  
 
 
 
