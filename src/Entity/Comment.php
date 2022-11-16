@@ -28,6 +28,11 @@ class Comment
     #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
 
+    public function __construct(Subject $subject)
+    {
+        $this->subject = $subject;
+    }
+    
     public function getId(): ?int
     {
         return $this->id;

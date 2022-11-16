@@ -1,9 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nos sujets{% endblock %}
+{% block title %}Nos sujets
+{% endblock %}
 
 {% block body %}
-<div id="article -list">
-	{% include 'subject/list.html.twig' with { subjects } %}
-</div>
+	<div class="container">
+	    <div id="article-list">
+			{% include 'subject/list.html.twig' with { subjects } %}
+		</div>
+	</div>
 {% endblock %}

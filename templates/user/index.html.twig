@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+	<div class="container w-25">
+		<div class="row">
+			<div class="col">
+				<h2>Profil de
+					{{ user.email|capitalize }}</h2>
+				<div class="col-12">
+					<label for="email" class="form-label">Nom d'utilisateur</label>
+				</div>
+				<div class="mb-3">
+					<div class="input_group">
+						<span class="input-group">@</span>
+						<input type="text" class="form-control" value="{{user.email}}" readonly>
+					</div>
+				</div>
+                <div class="mb-3">
+                    <p>Nombre de commentaires posté : {{ user.comments|length }}</p>
+                </div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

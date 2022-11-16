@@ -1,126 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-html, body{
+
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     position: relative;
 }
 
-header{
+header {
     box-shadow: 0 0 30px 0 grey;
 }
 
-.menu-list-header{  
+.menu-list-header {
     list-style: none;
     display: flex;
     align-items: center;
     background-color: white;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     text-shadow: 1px 1px 2px grey;
     font-family: 'Roboto Condensed', sans-serif;
-    
+
 }
 
-.background-content{
+.background-content {
     background-color: #f5f0f0;
 }
 
-.home-content{
+.home-content {
     padding-top: 150px;
 }
 
-.ankre-header{
+.ankre-header {
     color: black;
     text-decoration: none;
 }
 
-.ankre-header:hover{
+.ankre-header:hover {
     color: #68B65B;
 }
 
-.list-element{
+.list-element {
     box-shadow: 1px;
 }
 
-.logo-header{
+.logo-header {
     width: 190px;
 }
 
-.email-logo{
+.email-logo {
     width: 25px;
     margin-right: 4px;
 }
 
-.phone-logo{
+.phone-logo {
     width: 25px;
     margin-right: 4px;
 }
 
-.adresse-logo{
+.adresse-logo {
     width: 25px;
     margin-right: 4px;
 }
 
-.social-media-footer{
+.social-media-footer {
     width: 25px;
 }
 
-.adresse-footer{
+.adresse-footer {
     display: flex;
 }
 
-.phone-footer{
+.phone-footer {
     display: flex;
 }
 
-.footer-section{
+.footer-section {
     width: 100%;
-    height: 100px; 
+    height: 100px;
     bottom: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 
-.social-media-footer{
+.social-media-footer {
     margin: 4px;
-}   
+}
 
-main{
+main {
     position: relative;
     padding-bottom: 100px;
 }
 
-.shadow-img{    
+.shadow-img {
     box-shadow: 5px 5px 5px 5px #d1d1c7;
     margin-bottom: 10px;
     border-radius: 5px;
     width: 100%;
 }
 
-.hover-pub:hover{
+.hover-pub:hover {
     opacity: 80%;
     cursor: pointer;
 }
 
-.about{
+.about {
     box-shadow: 5px 5px 5px 5px #d1d1c7;
 }
 
-.main-right{
+.main-right {
     margin-top: 25px;
     margin-bottom: 30px;
     font-family: 'Roboto Condensed', sans-serif;
-} 
+}
 
-.row{
+.row {
     margin-top: 100px;
 }
 
-.blog-post{
+.blog-post {
     border: 1px solid white;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px #d1d1c7;
@@ -131,93 +133,97 @@ main{
     margin-bottom: 30px;
 }
 
-.color-title{
+.color-title {
     background-color: #68B65B;
     border-radius: 5px;
 }
 
-.blog-post-title{
+.blog-post-title {
     color: white;
     padding: 20px;
 }
 
-.category-nav-right{
+.category-nav-right {
     margin-bottom: 10px;
 }
 
-.category-nav-right:hover{
+.category-nav-right:hover {
     color: black;
 }
 
-.position-sticky{
+.position-sticky {
     height: auto;
 }
 
-.shadow-category{   
+.shadow-category {
     text-shadow: grey 1px 0 2px;
 }
 
-.link-support{
+.link-support {
     text-decoration: none;
     color: black;
 }
 
-.link-support:hover{
+.link-support:hover {
     color: #68B65B;
 }
-.category-subject-link{
+
+.category-subject-link {
     text-decoration: none;
     color: #68B65B;
 }
 
-.category-subject-link:hover{
+.category-subject-link:hover {
     color: black;
 }
 
-.img-equipe{
+.img-equipe {
     width: 100%;
     margin-bottom: 150px;
 }
 
 .card-5 .card-body {
-    
-    padding-bottom: 73px;
-    margin-left:100px ;
-    
-  }
 
-  .card-5 .card-heading {
+    padding-bottom: 73px;
+    margin-left: 100px;
+
+}
+
+.card-5 .card-heading {
     padding: 20px 0;
     background: #1a1a1a;
     -top-left-radius: 10px;
-  }
-  .title-inscription {
+}
+
+.title-inscription {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     color: #fff;
-  }
-  
-  .paragraphe-inscription {
+}
+
+.paragraphe-inscription {
     text-align: center;
     font-weight: bold;
 }
-  
-  .btn--green {
+
+.btn--green {
     background: #68B65B;
-    
-  }
-  .btn--radius-2 {
+
+}
+
+.btn--radius-2 {
     border-radius: 5px;
-   
-  }
-  
-  .btn--radius {
+
+}
+
+.btn--radius {
     border-radius: 3px;
-    
-  }
-  .btn {
+
+}
+
+.btn {
     display: inline-block;
     line-height: 50px;
     padding: 0 50px;
@@ -226,19 +232,7 @@ main{
     text-transform: uppercase;
     font-weight: 700;
     color: #f0f3f0;
-    font-family:sans-serif;
+    font-family: sans-serif;
     margin: 20px;
-  }
-
-
-  
-
-  
-
-
-
-
-
-
-
+}
 
