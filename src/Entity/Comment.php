@@ -24,6 +24,15 @@ class Comment
     #[ORM\JoinColumn(nullable: false)]
     private ?Subject $subject = null;
 
+    #[ORM\ManyToOne(inversedBy: 'comments')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
+
+    public function __construct(Subject $subject)
+    {
+        $this->subject = $subject;
+    }
+    
     public function getId(): ?int
     {
         return $this->id;
@@ -61,6 +70,18 @@ class Comment
     public function setSubject(?Subject $subject): self
     {
         $this->subject = $subject;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

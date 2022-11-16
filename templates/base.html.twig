@@ -2,11 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title>UniversWargameSpirit - {% block title %}{% endblock %} </title>
+		<title>UniversWargameSpirit -
+			{% block title %}{% endblock %}
+		</title>
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 		<link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-		
+
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
@@ -30,140 +32,139 @@
 					</li>
 					<img class="logo-header" src="{{ asset('assets/img/logo.png') }}" alt="">
 					<li class="list-element">
-					{% if is_granted('IS_AUTHENTICATED_FULLY')%}
-						<a class="ankre-header" href="{{ path('admin') }}">TABLEAU DE BORD</a>
-					</li> 
-					
+						{% if is_granted('IS_AUTHENTICATED_FULLY')%}
+							<a class="ankre-header" href="{{ path('admin') }}">TABLEAU DE BORD</a>
+						</li>
 
-				
+
 					{% endif %}
-					
+
 
 					{% if not is_granted('IS_AUTHENTICATED_FULLY')%}
-					
-					<li class="list-element">
-						<a class="ankre-header" href="{{path('app_register')}}">INSCRIPTION</a>
-						
-					</li>
-					<li class="list-element">
-						<a class="ankre-header" href="{{ path('app_login') }}">CONNEXION</a>
-					</li>
+
+						<li class="list-element">
+							<a class="ankre-header" href="{{ path('app_register') }}">INSCRIPTION</a>
+
+						</li>
+						<li class="list-element">
+							<a class="ankre-header" href="{{ path('app_login') }}">CONNEXION</a>
+						</li>
 					{% else %}
-					<div class="dropdown">
-					<a class="nav nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					
-					{{app.user.email|capitalize}}
-					</a>
-					<ul class="dropdown-menu">
-					<li>
-					<a class="dropdown-item" href="#">Mon profil</a>
-					</li>
-					<li>
-					<a class="dropdown-item" href={{path('app_logout')}}>Deconnexion</a>
-					</li>
+						<div class="dropdown">
+							<a class="nav nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-					</div>
-					{% endif %}
+								{{app.user.email|capitalize}}
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="{{ path('app_profile', { email: app.user.email }) }}">Mon profil</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="{{ path('app_logout') }}">Deconnexion</a>
+								</li>
 
-
-				</ul>
-			</header>
-			{% block body %}{% endblock %}
-			<div class="footer-section">
-				<div class="container">
-					<footer class="py-5">
-						<div class="row">
-							<div class="col-6 col-md-2 mb-3">
-								<h5>Informations</h5>
-								<br>
-								<ul class="nav flex-column">
-									<li class="nav-item mb-2">
-										<img class="adresse-logo" src="assets/img/cartes-et-drapeaux.png" alt="">
-										<span class="text-muted">Adresse: WARGAMESPIRIT</span>
-										<hr>
-										<p class="text-muted">21 bd Gambetta</p>
-										<p class="text-muted">38000 GRENOBLE</p>
-										<p class="text-muted">France</p>
-									</li>
-
-									<li class="adresse-footer nav-item mb-4">
-										<img class="email-logo" src="{{ asset('assets/img/email.png')}}" alt="">
-										<span href="#" class="nav-link p-0 text-muted">cmd@wspirit.fr</span>
-									</li>
-									<li class="phone-footer nav-item">
-										<img class="phone-logo" src="{{ asset('assets/img/telephone.png')}}" alt="">
-										<span class="nav-link p-0 text-muted">0458005668</span>
-									</li>
-								</ul>
 							</div>
+						{% endif %}
 
-							<div class="col-6 col-md-2 mb-3">
-								<h5>Catégories</h5>
-								<br>
-								<ul class="nav flex-column">
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Warhammer 40 000</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Age of Sigmar</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Jeux de société</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Jeux de cartes</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Modélisme et peinture</a>
-									</li>
-								</ul>
-							</div>
 
-							<div class="col-6 col-md-2 mb-3">
-								<h5>Votre compte</h5>
-								<br>
-								<ul class="nav flex-column">
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Informations personnelles</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Mes publications</a>
-									</li>
-									<li class="nav-item mb-4">
-										<a href="#" class="nav-link p-0 text-muted">Besoin d'aide</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="col-md-5 offset-md-1 mb-3">
-								<form>
-									<h5>Newsletter</h5>
+					</ul>
+				</header>
+				{% block body %}{% endblock %}
+				<div class="footer-section">
+					<div class="container">
+						<footer class="py-5">
+							<div class="row">
+								<div class="col-6 col-md-2 mb-3">
+									<h5>Informations</h5>
 									<br>
-									<p class="text-muted">Vous pouvez vous désinscrire à tout moment. Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site</p>
-									<div class="d-flex flex-column flex-sm-row w-100 gap-2">
-										<label for="newsletter1" class="visually-hidden">Email address</label>
-										<input id="newsletter1" type="text" class="form-control" placeholder="adresse@exemple.com...">
-										<button class="btn btn-dark" type="button">S'abonner</button>
-									</div>
-								</form>
+									<ul class="nav flex-column">
+										<li class="nav-item mb-2">
+											<img class="adresse-logo" src="assets/img/cartes-et-drapeaux.png" alt="">
+											<span class="text-muted">Adresse: WARGAMESPIRIT</span>
+											<hr>
+											<p class="text-muted">21 bd Gambetta</p>
+											<p class="text-muted">38000 GRENOBLE</p>
+											<p class="text-muted">France</p>
+										</li>
+
+										<li class="adresse-footer nav-item mb-4">
+											<img class="email-logo" src="{{ asset('assets/img/email.png')}}" alt="">
+											<span href="#" class="nav-link p-0 text-muted">cmd@wspirit.fr</span>
+										</li>
+										<li class="phone-footer nav-item">
+											<img class="phone-logo" src="{{ asset('assets/img/telephone.png')}}" alt="">
+											<span class="nav-link p-0 text-muted">0458005668</span>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-6 col-md-2 mb-3">
+									<h5>Catégories</h5>
+									<br>
+									<ul class="nav flex-column">
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Warhammer 40 000</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Age of Sigmar</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Jeux de société</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Jeux de cartes</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Modélisme et peinture</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-6 col-md-2 mb-3">
+									<h5>Votre compte</h5>
+									<br>
+									<ul class="nav flex-column">
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Informations personnelles</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Mes publications</a>
+										</li>
+										<li class="nav-item mb-4">
+											<a href="#" class="nav-link p-0 text-muted">Besoin d'aide</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-md-5 offset-md-1 mb-3">
+									<form>
+										<h5>Newsletter</h5>
+										<br>
+										<p class="text-muted">Vous pouvez vous désinscrire à tout moment. Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site</p>
+										<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+											<label for="newsletter1" class="visually-hidden">Email address</label>
+											<input id="newsletter1" type="text" class="form-control" placeholder="adresse@exemple.com...">
+											<button class="btn btn-dark" type="button">S'abonner</button>
+										</div>
+									</form>
+								</div>
 							</div>
-						</div>
-						<div>
-							<a href="https://www.instagram.com/wargamespirit/" target="_blank"><img class="social-media-footer" href="#" src="{{ asset('/assets/img/instagram.png')}}" alt=""></a>
-							<a href="https://twitter.com/SpiritWargame" target="_blank"><img class="social-media-footer" src="/assets/img/twitter.png" alt=""></a>
-							<a href="https://www.facebook.com/wargamespirit/" target="_blank"><img class="social-media-footer" src="/assets/img/facebook.png " alt=""></a>
-							<a href="https://www.youtube.com/c/WargameSpirit" target="_blank"><img class="social-media-footer" src="/assets/img/youtube.png " alt=""></a>
-							<a href="https://discord.com/invite/VRs8Mvu4vf" target="_blank"><img class="social-media-footer" href="#" src="/assets/img/discorde.png " alt=""></a>
-						</div>
-						<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-							<p>&copy; 2022 Company, Inc. All rights reserved.</p>
-						</div>
-					</footer>
+							<div>
+								<a href="https://www.instagram.com/wargamespirit/" target="_blank"><img class="social-media-footer" href="#" src="{{ asset('/assets/img/instagram.png')}}" alt=""></a>
+								<a href="https://twitter.com/SpiritWargame" target="_blank"><img class="social-media-footer" src="/assets/img/twitter.png" alt=""></a>
+								<a href="https://www.facebook.com/wargamespirit/" target="_blank"><img class="social-media-footer" src="/assets/img/facebook.png " alt=""></a>
+								<a href="https://www.youtube.com/c/WargameSpirit" target="_blank"><img class="social-media-footer" src="/assets/img/youtube.png " alt=""></a>
+								<a href="https://discord.com/invite/VRs8Mvu4vf" target="_blank"><img class="social-media-footer" href="#" src="/assets/img/discorde.png " alt=""></a>
+							</div>
+							<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+								<p>&copy; 2022 Company, Inc. All rights reserved.</p>
+							</div>
+						</footer>
+					</div>
 				</div>
-			</div>
-		</main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-		<script src="assets/app.js"></script>
+			</main>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<script src="assets/app.js"></script>
+		</body>
 	</body>
 </html>
-
