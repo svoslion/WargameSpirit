@@ -202,17 +202,13 @@ main{
   .paragraphe-inscription {
     text-align: center;
     font-weight: bold;
-    .subject-item{
-    align-items: center;
+    align-items:center;
 }
 
 .color-subject{
     margin-bottom: 20px;
 }
 
-
-
-  }
   
   .btn--green {
     background: #68B65B;
@@ -220,6 +216,7 @@ main{
   }
   .btn--radius-2 {
     border-radius: 5px;
+    margin-top: 20px;
    
   }
   
@@ -240,8 +237,19 @@ main{
     margin: 20px;
   }
 
+  .form-row .name  {
+    width: 125px;
+    color: #555;
+    font-weight: 700;
+    margin-right: 50px;
+    align-items: center;
+  }
 
-  
+  .form-row .name {
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+  }
+
 
   
 
