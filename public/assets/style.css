@@ -130,6 +130,7 @@ main {
     padding: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -235,4 +236,26 @@ main {
     font-family: sans-serif;
     margin: 20px;
 }
+
+.profile-card{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f5f0f0;
+    position: relative;
+    padding: 40px;
+}
+
+.subject-comment-user{
+    margin-top: 30px;
+}
+
+#article-list{
+    margin-top: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title-category-subject{
+    color: #68B65B;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 

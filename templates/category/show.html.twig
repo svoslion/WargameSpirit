@@ -30,9 +30,9 @@
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-					<div class="row g-5">
-						<div class="col">
-							<h3 class="pb-4 mb-4 fst-italic border-bottom">{{ category.name }}</h3>
+					<div class="g-5">
+						<div>
+							<h3 class="pb-4 mb-4 fst-italic border-bottom text-center title-category-subject">{{ category.name }}</h3>
 							<div id="article-list">
 								{% include 'subject/list.html.twig' with { subjects: category.subjects } %}
 							</div>
