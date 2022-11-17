@@ -20,7 +20,7 @@
 	<body>
 		<main>
 			<header>
-				<ul class="menu-list-header container">
+				<div class="menu-list-header container">
 					<li class="list-element">
 						<a class="ankre-header" href="{{ path('app_home') }}">ACCUEIL</a>
 					</li>
@@ -31,10 +31,13 @@
 						<a class="ankre-header" href="{{ path('subject_show') }}">NOS SUJETS</a>
 					</li>
 					<img class="logo-header" src="{{ asset('assets/img/logo.png') }}" alt="">
-					<li class="list-element">
+					
 						{% if is_granted('IS_AUTHENTICATED_FULLY')%}
+						<li class="list-element">
 							<a class="ankre-header" href="{{ path('admin') }}">TABLEAU DE BORD</a>
-						</li>
+							</li>
+
+						
 
 
 					{% endif %}
@@ -62,12 +65,16 @@
 								<li>
 									<a class="dropdown-item" href="{{ path('app_logout') }}">Deconnexion</a>
 								</li>
+								</ul>
+								</div>
+								
 
-							</div>
+						
 						{% endif %}
+						
 
 
-					</ul>
+					
 				</header>
 				{% block body %}{% endblock %}
 				<div class="footer-section">
