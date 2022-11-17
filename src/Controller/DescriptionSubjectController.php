@@ -8,22 +8,28 @@ use App\Entity\Comment;
 use App\Repository\CategoryRepository;
 use App\Form\Type\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class DescriptionSubjectController extends AbstractController
 {
     #[Route('/description/subject/{slug}', name: 'app_description_subject')]
-    public function show(?Subject $subject, CategoryRepository $categoryRepo): Response
+    public function show(?Subject $subject, CategoryRepository $categoryRepo, Request $request): Response
     {
         if (!$subject) {
             return $this->redirectToRoute('app_home');
         }
-
+        
+        // Partie commentaire
+        // On crée le commentaire vierge
         $comment = new Comment($subject);
 
+        // On genère le commentaire
         $commentForm = $this->createForm(CommentType::class, $comment);
- 
+
+        $commentForm->handleRequest($request);
+
         return $this->renderForm('description_subject/show.html.twig', [
             'subject' => $subject,
             'commentForm' => $commentForm,

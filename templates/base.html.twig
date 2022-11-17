@@ -32,7 +32,7 @@
 					</li>
 					<img class="logo-header" src="{{ asset('assets/img/logo.png') }}" alt="">
 					<li class="list-element">
-						{% if is_granted('IS_AUTHENTICATED_FULLY')%}
+						{% if is_granted('IS_AUTHENTICATED_FULLY') %}
 							<a class="ankre-header" href="{{ path('admin') }}">TABLEAU DE BORD</a>
 						</li>
 

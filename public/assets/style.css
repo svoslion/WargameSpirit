@@ -193,7 +193,7 @@ main {
 .card-5 .card-heading {
     padding: 20px 0;
     background: #1a1a1a;
-    -top-left-radius: 10px;
+    /* -top-left-radius: 10px; */
 }
 
 .title-inscription {
@@ -256,6 +256,50 @@ main {
 .title-category-subject{
     color: #68B65B;
     font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px #68B65B;
 }
+
+.roboto-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px grey;
+}
+
+
+.epingle-link img{
+    margin: 0 auto;
+}
+
+.roboto-connexion{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.color-back-co{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.connexion-content label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.ll{
+    color: white;
+}
+
+.connexion-radius{
+    border-radius: 5px;
+}
+
+.background-co{
+    background-color: #f5f0f0;
+}
+
+.background-connexion{
+    background-color: white;
+}
+
+
+
 
 
