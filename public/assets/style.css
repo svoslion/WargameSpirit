@@ -329,6 +329,18 @@ main {
     background-color: white;
 }
 
+.link-to-insc{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.link-to-insc:hover{
+    color: #68B65B;
+}
+
+.btn-authenticate{
+    justify-content: center;
+}
 
 
 

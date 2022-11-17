@@ -29,9 +29,17 @@
 							<label for="inputPassword">Mot de passe</label>
 							<input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
 						</div>
-						<div class="btn-authenticate">
+
+						<div class="d-grid mx-auto">
 							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 							<button class="btn btn-lg btn-success" type="submit">Se connecter</button>
+						</div>
+
+
+						<div>
+							<p class="p-4 fst-italic">Vous ne possédez pas de compte Univers WargameSpirit?
+								<a class="link-to-insc" href="{{ path('app_register') }}">Inscrivez-vous dès maintenant !</a>
+							</p>
 						</div>
 					</div>
 				</form>
