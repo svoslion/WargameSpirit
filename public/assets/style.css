@@ -196,13 +196,7 @@ main {
     /* -top-left-radius: 10px; */
 }
 
-.title-inscription {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-}
+
 
 .paragraphe-inscription {
     text-align: center;
@@ -214,26 +208,7 @@ main {
     margin-bottom: 20px;
 }
 
-  
- 
 
-.btn--green {
-    background: #68B65B;
-
-}
-
-.btn--radius-2 {
-    border-radius: 5px;
-    margin-top: 20px;
-   
-  }
-  
-  
-
-.btn--radius {
-    border-radius: 3px;
-
-}
 
 .btn {
     display: inline-block;
@@ -247,20 +222,6 @@ main {
     font-family: sans-serif;
     margin: 20px;
   }
-
-  .form-row .name  {
-    
-    color: #555;
-    font-weight: 700;
-    margin-right: 50px;
-    align-items: center;
-  }
-
-  .form-row .name {
-    margin-bottom: 7px;
-    color: rgb(0, 0, 0);
-  }
-
 
 
 
@@ -291,9 +252,7 @@ main {
     text-shadow: 1px 1px 2px grey;
 }
 
-.p {
-    margin-left: 20px;
-}
+
 
 .epingle-link img{
     margin: 0 auto;
@@ -342,6 +301,10 @@ main {
     justify-content: center;
 }
 
+.inscription-content label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
 
 
 
