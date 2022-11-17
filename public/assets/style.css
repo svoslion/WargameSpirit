@@ -207,7 +207,15 @@ main {
 .paragraphe-inscription {
     text-align: center;
     font-weight: bold;
+    align-items:center;
 }
+
+.color-subject{
+    margin-bottom: 20px;
+}
+
+  
+ 
 
 .btn--green {
     background: #68B65B;
@@ -216,8 +224,11 @@ main {
 
 .btn--radius-2 {
     border-radius: 5px;
-
-}
+    margin-top: 20px;
+   
+  }
+  
+  
 
 .btn--radius {
     border-radius: 3px;
@@ -235,7 +246,23 @@ main {
     color: #f0f3f0;
     font-family: sans-serif;
     margin: 20px;
-}
+  }
+
+  .form-row .name  {
+    
+    color: #555;
+    font-weight: 700;
+    margin-right: 50px;
+    align-items: center;
+  }
+
+  .form-row .name {
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+  }
+
+
+
 
 .profile-card{
     font-family: 'Roboto Condensed', sans-serif;
@@ -264,6 +291,9 @@ main {
     text-shadow: 1px 1px 2px grey;
 }
 
+.p {
+    margin-left: 20px;
+}
 
 .epingle-link img{
     margin: 0 auto;
