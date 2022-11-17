@@ -249,7 +249,7 @@ main {
   }
 
   .form-row .name  {
-    width: 125px;
+    
     color: #555;
     font-weight: 700;
     margin-right: 50px;
@@ -285,4 +285,7 @@ main {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.p {
+    margin-left: 20px;
+}
 

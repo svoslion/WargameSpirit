@@ -16,7 +16,8 @@
 			<div class="mail-inscription">
 				<div class="paragraphe-inscription">
 					<p>Créez votre compte Wargamespirit</p>
-				</div>
+					</div>
+				
 			</div>
 
 			<div class="card-body">
@@ -28,8 +29,8 @@
 
 							{{ form_row(registrationForm.email) }}
 							
-						</div>
-						</div>
+						
+						
 						
 						
 						<div class="value"></div>
@@ -43,6 +44,8 @@
             label: 'Mot de passe'
         }) }}
 		</div>
+		</div>
+		</div>
 					
 
 
@@ -50,12 +53,16 @@
         Inscription
     </button>
 
-					<p>
+					<p class="p">
 						<a href="{{path('app_login')}}">J'ai déjà un compte</a>
+						
 
 					</p>
+				
 
 					{{ form_end(registrationForm) }}
+				
+				
 				</div>
 			</div>
 		</form>
