@@ -32,12 +32,15 @@
 							</button>
 						</div>
 
-						<div class="container subject-comment-user">
-							<h1>{{ subject.title }}</h1>
-
-							<hr>
-
-							{{ subject.content | raw }}
+						<div id="article-list" class="container subject-comment-user">
+							<div class="shadow-img bg-light">
+								<div class="">
+									<h1 class="pb-4 mb-4 fst-italic border-bottom text-center roboto-style p-2">{{ subject.title }}</h1>
+								</div>
+								<div class="p-4 roboto-style">
+									{{ subject.content | raw }}
+								</div>
+							</div>
 
 							<h2 class="comment-title mt-5">
 								<span id="comment-count">{{ subject.comments|length }}
@@ -97,11 +100,12 @@
 								</div>
 							</div>
 						</div>
-					</section>
-					<section class="home-content-two">
+					</div>
+					<section class="home-content-two container">
 						<a href="https://www.twitch.tv/wargamespirit"><img class="img-equipe" src="{{ asset('assets/img/spe.png') }}" alt=""></a>
 					</section>
-				</div>
+				</section>
 			</div>
-		</body>
+		</div>
+	</body>
 {% endblock %}

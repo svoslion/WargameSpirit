@@ -4,57 +4,55 @@
 {% endblock %}
 
 {% block body %}
-<div class="shadow-img connexion-radius">
-	<div class="background-co">
-		<div class="container w-25">
+	<div class="shadow-img connexion-radius">
+		<div class="background-co">
+			<div class="container w-25">
 
-			<div class="shadow-img connexion-radius">
-				<div class="color-back-co">
-					<h1 class="h3 mb-3 p-4 font-weight-normal text-center ll">Inscrivez-vous</h1>
-				</div>
-
-
-				{{ form_start(registrationForm) }}
-				<div class="mail-inscription">
-					<div class="paragraphe-inscription">
-						<p>Créez votre compte Wargamespirit</p>
+				<div class="shadow-img connexion-radius">
+					<div class="color-back-co">
+						<h1 class="h3 mb-3 p-4 font-weight-normal text-center ll">Inscrivez-vous</h1>
 					</div>
 
-				</div>
+
+					{{ form_start(registrationForm) }}
+					<div class="mail-inscription">
+						<div class="paragraphe-inscription">
+							<p>Créez votre compte Wargamespirit</p>
+						</div>
+					</div>
 
 
-				<div class="inscription-content p-4">
+					<div class="inscription-content p-4">
 
 
-					{{ form_row(registrationForm.email) }}
+						{{ form_row(registrationForm.email) }}
 
 
-					{{ form_row(registrationForm.plainPassword, {
+						{{ form_row(registrationForm.plainPassword, {
 							
             
             label: 'Mot de passe'
         }) }}
 
+					</div>
+
+
+					<div class="d-grid mx-auto">
+						<button class="btn btn-lg btn-success" type="submit">Inscription</button>
+					</div>
+
+					<p class="p-4 fst-italic">Vous  possédez déjà un compte Univers WargameSpirit?
+						<a class="link-to-insc" href="{{ path('app_login') }}">C'est par ici !</a>
+					</p>
+
 				</div>
 
 
-				<div class="d-grid mx-auto">
-					<button class="btn btn-lg btn-success" type="submit">Inscription</button>
-				</div>
+				{{ form_end(registrationForm) }}
 
-				<p class="p-4 fst-italic">Vous  possédez déjà un compte Univers WargameSpirit?
-					<a class="link-to-insc" href="{{ path('app_login') }}">C'est par ici !</a>
-				</p>
-			
+
 			</div>
 
-
-			{{ form_end(registrationForm) }}
-
-
 		</div>
-	
-</div>
-</div>
-</form>
-</div>{% endblock %}
+	</div>
+</form></div>{% endblock %}

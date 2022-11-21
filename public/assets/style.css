@@ -234,6 +234,7 @@ main {
 
 .subject-comment-user{
     margin-top: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #article-list{
@@ -305,6 +306,7 @@ main {
     margin-bottom: 5px;
     margin-top: 10px;
 }
+
 
 
 

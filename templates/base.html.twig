@@ -31,13 +31,11 @@
 						<a class="ankre-header" href="{{ path('subject_show') }}">NOS SUJETS</a>
 					</li>
 					<img class="logo-header" src="{{ asset('assets/img/logo.png') }}" alt="">
-					
-						{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+					{% if is_granted('IS_AUTHENTICATED_FULLY') %}
 						<li class="list-element">
 							<a class="ankre-header" href="{{ path('admin') }}">TABLEAU DE BORD</a>
-							</li>
-
-						
+						</li>
 
 
 					{% endif %}
@@ -65,16 +63,13 @@
 								<li>
 									<a class="dropdown-item" href="{{ path('app_logout') }}">Deconnexion</a>
 								</li>
-								</ul>
-								</div>
-								
-
-						
-						{% endif %}
-						
+							</ul>
+						</div>
 
 
-					
+					{% endif %}
+
+
 				</header>
 				{% block body %}{% endblock %}
 				<div class="footer-section">
