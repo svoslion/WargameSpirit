@@ -12,4 +12,4 @@ interface TimestampedInterface
 
     public function setUpdatedAt(?\DateTimeInterface $updatedAt);
   
-}
+}   

@@ -41,17 +41,18 @@
 									{{ subject.content | raw }}
 								</div>
 							</div>
-
-							<h2 class="comment-title mt-5">
-								<span id="comment-count">{{ subject.comments|length }}
-									commentaires(s)</span>
-							</h2>
-
+							<div>
+								<h2 class="comment-title mt-5">
+									<span id="comment-count">{{ subject.comments|length }}
+										commentaire(s)</span>
+								</h2>
+							</div>
 							<hr>
-
-							<div class="comment-area mb-5">
-								{{ form(commentForm) }}
+							{% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') %}
+								<div class="comment-area mb-5">
+									{{ form(commentForm) }}
 								</div>
+						    {% endif %}
 							</div>
 						</div>
 						<div class="annonces col-md-2">

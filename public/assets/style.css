@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-html,
-body {
+
+html,body {
     height: 100%;
 }
 
@@ -53,12 +53,15 @@ header {
 }
 
 .email-logo {
+    height: 20px;
     width: 25px;
     margin-right: 4px;
+    margin-top: 2px;
 }
 
 .phone-logo {
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin-right: 4px;
 }
 
@@ -86,6 +89,12 @@ header {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.footer-category-style {
+    list-style: none;
+    text-decoration: none;
+    /* padding-right: 20px; */
+}
+
 
 .social-media-footer {
     margin: 4px;
@@ -104,11 +113,10 @@ main {
 }
 
 .hover-pub:hover {
-    opacity: 80%;
-    cursor: pointer;
+	transform: scale(1.2);
 }
 
-.about {
+.about {    
     box-shadow: 5px 5px 5px 5px #d1d1c7;
 }
 
@@ -183,6 +191,11 @@ main {
     margin-bottom: 150px;
 }
 
+.img-equipe:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 .card-5 .card-body {
 
     padding-bottom: 73px;
@@ -193,22 +206,18 @@ main {
 .card-5 .card-heading {
     padding: 20px 0;
     background: #1a1a1a;
-    /* -top-left-radius: 10px; */
 }
 
 
 
 .paragraphe-inscription {
     text-align: center;
-    font-weight: bold;
-    align-items:center;
+    align-items: center;
 }
 
-.color-subject{
+.color-subject {
     margin-bottom: 20px;
 }
-
-
 
 .btn {
     display: inline-block;
@@ -221,92 +230,92 @@ main {
     color: #f0f3f0;
     font-family: sans-serif;
     margin: 20px;
-  }
+}
 
 
 
-.profile-card{
+.profile-card {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #f5f0f0;
     position: relative;
     padding: 40px;
 }
 
-.subject-comment-user{
+.subject-comment-user {
     margin-top: 30px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#article-list{
+#article-list {
     margin-top: 30px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.title-category-subject{
+.title-category-subject {
     color: #68B65B;
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 1px 1px 2px #68B65B;
 }
 
-.roboto-title{
+.roboto-title {
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 1px 1px 2px grey;
 }
 
 
 
-.epingle-link img{
+.epingle-link img {
     margin: 0 auto;
 }
 
-.roboto-connexion{
+.roboto-connexion {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.color-back-co{
+.color-back-co {
     background-color: black;
     border-radius: 5px;
 }
 
-.connexion-content label{
+.connexion-content label {
     margin-bottom: 5px;
     margin-top: 10px;
 }
 
-.ll{
+.ll {
     color: white;
 }
 
-.connexion-radius{
+.connexion-radius {
     border-radius: 5px;
 }
 
-.background-co{
+.background-co {
     background-color: #f5f0f0;
 }
 
-.background-connexion{
+.background-connexion {
     background-color: white;
 }
 
-.link-to-insc{
+.link-to-insc {
     /* text-decoration: none; */
     color: black;
 }
 
-.link-to-insc:hover{
+.link-to-insc:hover {
     color: #68B65B;
 }
 
-.btn-authenticate{
+.btn-authenticate {
     justify-content: center;
 }
 
-.inscription-content label{
+.inscription-content label {
     margin-bottom: 5px;
     margin-top: 10px;
 }
 
-
-
-
+.subject-item {
+    align-items: center;
+}

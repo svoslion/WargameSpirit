@@ -16,12 +16,19 @@ class CommentType extends AbstractType
     {
         // ajout des champs dont on va ce servir pour le commentaire
         $builder
-            ->add('content', TextareaType::class, [
-                'label' => 'Votre message'
+            ->add('user', EmailType::class, [
+                'label' => 'E-mail', 
+                'attr' => [
+                    'class' => 'form-control'
+                ]
             ])
-            ->add('subject', HiddenType::class)
-            ->add('send', SubmitType::class, [
-                'label' => 'Envoyer'
-            ]);
+            ->add('content', TextareaType::class, [
+                'label' => 'Votre commentaire', 
+                'attr' => [
+                    'class' => 'form-control'
+                ]
+            ])
+        
+            ->add('Publier', SubmitType::class);
     }
 }

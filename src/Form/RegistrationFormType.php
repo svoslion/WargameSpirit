@@ -19,7 +19,7 @@ class RegistrationFormType extends AbstractType
     {
         $builder
             ->add('email', TextType::class, [
-                'label' => "email"
+                'label' => "Email"
             ])
             ->add('plainPassword', RepeatedType::class, [
                 'mapped' => false,
@@ -32,7 +32,7 @@ class RegistrationFormType extends AbstractType
                 ],
                 // Ajout de la case confirmer le mot de passe//
                 'first_options'  => ['label' => 'Mot de passe'],
-                'second_options' => ['label' => 'Confirmer le mot de passe'],
+                'second_options' => ['label' => 'Confirmez votre mot de passe'],
                 'constraints' => [
                     new NotBlank(),
                     new Length([

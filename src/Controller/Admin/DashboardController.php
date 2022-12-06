@@ -48,6 +48,7 @@ class DashboardController extends AbstractDashboardController
             MenuItem::linkToCrud('Tous les sujets', 'fas fa-newspaper', Subject::class),
             // Création du sujet
             MenuItem::linkToCrud('Ajouter', 'fas fa-plus', Subject::class)->setAction(Crud::PAGE_NEW),
+            // Création des catégories
             MenuItem::linkToCrud('Catégories', 'fas fa-list', Category::class)
         ]);
         
